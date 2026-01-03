@@ -1,57 +1,48 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import cloudflareLogo from './assets/Cloudflare_Logo.svg'
 import './App.css'
 
+
+
 function App() {
-  const [count, setCount] = useState(0)
-  const [name, setName] = useState('unknown')
 
   return (
-    <>
-      <div>
-        <a href='https://vite.dev' target='_blank'>
-          <img src={viteLogo} className='logo' alt='Vite logo' />
-        </a>
-        <a href='https://react.dev' target='_blank'>
-          <img src={reactLogo} className='logo react' alt='React logo' />
-        </a>
-        <a href='https://workers.cloudflare.com/' target='_blank'>
-          <img src={cloudflareLogo} className='logo cloudflare' alt='Cloudflare logo' />
-        </a>
+    
+      <div className='page-container'>
+
+        <div className='logo-container'>
+          <img src={"/mothersLogo.jpeg"} className="logo react" alt="React logo" />
+
+        </div>
+        <h1>Dolab Bakiza</h1>
+        <h2>Coming soon!</h2>
+        <div className='card-container'>
+          <a href="https://www.instagram.com/dolab.bakiza/" target='_blank' rel="noopener noreferrer">
+            <div className="card" style={{
+              backgroundImage: `url(/instagramLogo.png)`,
+            }}></div></a>
+
+          <a href="https://www.facebook.com/dolab.bakiza.2025" target='_blank' rel="noopener noreferrer"><div className="card" style={{
+            backgroundImage: `url(/facebookLogo.png)`,
+          }}></div></a>
+
+          <a href="https://api.whatsapp.com/send?phone=00201205253142" target='_blank' rel="noopener noreferrer">
+
+            <div className="card" style={{
+              backgroundImage: `url("/whatsappLogo.png")`,
+            }}></div>
+          </a>
+
+          <a href="https://www.tiktok.com/@dolab.bakiza" target='_blank' rel="noopener noreferrer">
+            <div className="card" style={{
+              backgroundImage: `url(/tiktokLogo.png)`,
+            }}></div>
+          </a>
+
+
+        </div>
       </div>
-      <h1>Vite + React + Cloudflare</h1>
-      <div className='card'>
-        <button
-          onClick={() => setCount((count) => count + 1)}
-          aria-label='increment'
-        >
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <div className='card'>
-        <button
-          onClick={() => {
-            fetch('/api/')
-              .then((res) => res.json())
-              .then((data) => setName(data.name))
-          }}
-          aria-label='get name'
-        >
-          Name from API is: {name}
-        </button>
-        <p>
-          Edit <code>worker/index.js</code> to change the name
-        </p>
-      </div>
-      <p className='read-the-docs'>
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+   
   )
 }
 
