@@ -33,7 +33,7 @@
 }
 
 .logo {
-object-fit: contain;
+  object-fit: contain;
   box-sizing: border-box;
   will-change: filter;
   transition: filter 300ms;
@@ -50,13 +50,12 @@ object-fit: contain;
 }
 
 .card-container {
- 
+
   bottom: 0px;
   justify-self: center;
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-
 }
 
 .card {

@@ -9,7 +9,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
+
 }
 
 a {
@@ -31,19 +31,22 @@ h1 {
   line-height: 1.1;
   color: #78d6a2;
 }
+
 h2 {
   color: #78d6a2;
   padding: 0;
   margin: 0 0 10px;
 }
-h1{
-   @media (max-width: 600px) {
-  font-size: 1.7em ;
+
+h1 {
+  @media (max-width: 600px) {
+    font-size: 1.7em;
   }
 }
-h2{
-   @media (max-width: 600px) {
-  font-size: 1.15em ;
+
+h2 {
+  @media (max-width: 600px) {
+    font-size: 1.15em;
   }
 }
 
@@ -58,9 +61,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -71,9 +76,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
