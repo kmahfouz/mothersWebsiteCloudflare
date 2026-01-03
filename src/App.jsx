@@ -25,7 +25,7 @@ function App() {
           backgroundImage: `url(/facebookLogo.png)`,
         }}></div></a>
 
-        <a href="https://api.whatsapp.com/send?phone=00201205253142" target='_blank' rel="noopener noreferrer">
+        <a href="https://api.whatsapp.com/send?phone=0201205253142" target='_blank' rel="noopener noreferrer">
 
           <div className="card" style={{
             backgroundImage: `url("/whatsappLogo.png")`,
