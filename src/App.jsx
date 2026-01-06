@@ -1,9 +1,13 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 
 
 
 function App() {
+
+  useEffect(() =>{
+
+  })
 
   return (
 
@@ -11,7 +15,6 @@ function App() {
 
       <div className='logo-container'>
         <img src={"/mothersLogo.jpeg"} className="logo react" alt="React logo" />
-
       </div>
       <h1>Dolab Bakiza</h1>
       <h2>Coming soon!</h2>

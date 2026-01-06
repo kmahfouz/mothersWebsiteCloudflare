@@ -30,6 +30,11 @@
   @media (max-width: 700px) {
     width: 45%;
   }
+  @media (max-width: 500px) {
+    border: none;
+    border-radius: 0%;
+
+  }
 }
 
 .logo {
@@ -42,7 +47,10 @@
   transition: all 0.2s ease;
   border-radius: 50%;
   border: black 3px solid;
-
+ @media (max-width: 500px) {
+    border: none;
+    border-radius: 0%;
+  }
 }
 
 .logo:hover {
