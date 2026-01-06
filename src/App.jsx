@@ -6,7 +6,7 @@ import './App.css'
 function App() {
 
   useEffect(() =>{
-
+    console.log("Loading")
   })
 
   return (
